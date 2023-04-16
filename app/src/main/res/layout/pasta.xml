@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/pastaImage_1"
+        android:layout_width="315dp"
+        android:layout_height="223dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginTop="17dp"
+        android:onClick="showPopup"
+        app:srcCompat="@drawable/pasta" />
+
+    <TextView
+        android:id="@+id/price_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-21dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="118dp"
+        android:layout_toRightOf="@id/pastaImage_1"
+        android:text="Herb Delight\nRs.289"
+        android:textSize="23dp" />
+
+    <ImageView
+        android:id="@+id/pastaImage_2"
+        android:layout_width="306dp"
+        android:layout_height="205dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/pastaImage_1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-36dp"
+        android:layout_marginTop="30dp"
+        android:onClick="showPopup"
+        app:srcCompat="@drawable/pasta2" />
+
+    <TextView
+        android:id="@+id/price_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pastaImage_1"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/pastaImage_2"
+        android:paddingTop="100dp"
+        android:textColor="@color/black"
+        android:text="White Pasta\nRs.199"
+        android:textSize="23dp" />
+
+    <ImageView
+        android:id="@+id/pastaImage_3"
+        android:layout_width="211dp"
+        android:layout_height="213dp"
+        android:layout_below="@id/pastaImage_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="504dp"
+        android:onClick="showPopup"
+        app:srcCompat="@drawable/pasta3" />
+
+    <TextView
+        android:id="@+id/price_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Italian Pasta\nRs.399"
+        android:layout_toRightOf="@id/pastaImage_3"
+        android:layout_below="@id/pastaImage_2"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="100dp"
+        />
+
+</RelativeLayout>

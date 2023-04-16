@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/pizzaImage_1"
+        android:layout_width="298dp"
+        android:layout_height="229dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginTop="12dp"
+        android:onClick="showPopup"
+        app:srcCompat="@drawable/pizza" />
+
+    <TextView
+        android:id="@+id/price_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginRight="19dp"
+        android:layout_toRightOf="@id/pizzaImage_1"
+        android:text="Margherita\n₹199"
+        android:textColor="@color/black"
+        android:textSize="23dp" />
+
+    <ImageView
+        android:id="@+id/pizzaImage_2"
+        android:layout_width="267dp"
+        android:layout_height="206dp"
+        android:layout_below="@id/pizzaImage_1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-14dp"
+        android:layout_marginTop="13dp"
+        android:onClick="showPopup"
+        app:srcCompat="@drawable/pizza2" />
+
+    <TextView
+        android:id="@+id/price_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Farm House\n₹359"
+        android:layout_toRightOf="@id/pizzaImage_2"
+        android:layout_below="@id/pizzaImage_1"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="100dp"
+        />
+
+    <ImageView
+        android:id="@+id/pizzaImage_3"
+        android:layout_width="261dp"
+        android:layout_height="242dp"
+        android:layout_below="@id/pizzaImage_2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-27dp"
+        android:layout_marginTop="19dp"
+        android:onClick="showPopup"
+        app:srcCompat="@drawable/pizza3" />
+
+    <TextView
+        android:id="@+id/price_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Deluxe Veggie\n₹299"
+        android:layout_toRightOf="@id/pizzaImage_3"
+        android:layout_below="@id/pizzaImage_2"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:paddingTop="100dp"
+        />
+
+</RelativeLayout>
